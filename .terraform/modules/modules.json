@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"azure_infrastructure","Source":"./configuration","Dir":"configuration"},{"Key":"azure_infrastructure.vmdelete","Source":"../modules/vm_cleanup","Dir":"modules/vm_cleanup"}]}
