@@ -1,0 +1,9 @@
+---
+- name: Start Azure VMs
+  hosts: AzureConnectivityLab_VMs_Inventory  # Use the name of your inventory
+  tasks:
+    - name: Start the VM
+      azure.azcollection.azure_rm_virtualmachine:
+        resource_group: aa20nazeusub001  # Replace with your resource group name
+        name: "{{ inventory_hostname }}"  # This will use the host name from the inventory
+        state: powered_on
